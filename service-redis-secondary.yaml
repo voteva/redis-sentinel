@@ -2,11 +2,6 @@
 apiVersion: v1
 metadata:
   name: redis-secondary
-  namespace: test-project
-  selfLink: /api/v1/namespaces/test-project/services/redis-secondary
-  uid: 7141167c-3b6d-4e07-b1e8-be1b568de814
-  resourceVersion: '8642648'
-  creationTimestamp: '2020-11-09T09:35:01Z'
 spec:
   ports:
     - protocol: TCP
@@ -14,8 +9,5 @@ spec:
       targetPort: 26379
   selector:
     app: redis-secondary
-  clusterIP: 172.30.27.208
   type: ClusterIP
   sessionAffinity: None
-status:
-  loadBalancer: {}
