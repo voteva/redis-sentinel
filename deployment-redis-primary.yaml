@@ -37,7 +37,7 @@ spec:
               memory: 100Mi
           imagePullPolicy: Always
         - name: redis-sentinel
-          image: voteva/redis-sentinel
+          image: voteva/redis-master-sentinel
           ports:
             - name: redis-sentinel
               containerPort: 26379
